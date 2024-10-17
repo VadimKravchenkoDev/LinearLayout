@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#F44336"
+    >
 
     <LinearLayout
         android:id="@+id/linear1"
@@ -14,14 +16,28 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"
+        >
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
             android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/firstguitar"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/guitar3" />
+            android:text="My first guitar"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
 
     </LinearLayout>
 
@@ -31,29 +47,53 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/linear1"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"
         >
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="200dp"
-            android:layout_weight="1"
+            android:layout_margin="10dp"
             app:srcCompat="@drawable/secondguitar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My second guitar"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linear3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@id/linear2"
+        android:layout_margin="20dp"
+        android:background="@drawable/border"
         >
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="200dp"
-            android:layout_weight="1"
+            android:layout_margin="10dp"
             app:srcCompat="@drawable/guitar3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My third guitar"
+            android:layout_gravity="center"
+            android:textColor="@color/cardview_light_background"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
